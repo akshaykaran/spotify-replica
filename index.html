@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My_Music_Player</title>
+    <script
+      src="https://kit.fontawesome.com/00d3e89dba.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style_musicplayer.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION BAR -->
+      <div id="nav-bar">
+        <!-- NINJA STUDIO LOGO -->
+        <div id="logo">
+          <a href="#"
+            ><img
+              src="https://raw.githubusercontent.com/rockingatgithub/music_player_cn/master/resources/studio.png"
+          /></a>
+          <span style="font-size: 1.2rem; color: white; font-family: cursive;"
+            ><strong>Ninja Studio</strong></span
+          >
+        </div>
+        <!-- FAVOURITES ANIMATION -->
+        <div id="fav">
+          <img
+            src="https://1.bp.blogspot.com/-b41XVXhXIDc/XQGQfyAjrhI/AAAAAAAAOoM/c-mSFT5MT7gMEJikt79TWPabtEHQl8PkgCLcBGAs/s1600/favorites.gif"
+          />
+        </div>
+        <!-- SONGS SEARCH  -->
+        <div id="form">
+          <form>
+            <!-- <i class="fas fa-search"></i> -->
+            <input type="text" id="search" value="" placeholder="Search" />
+            <!-- <i class="fas fa-microphone-alt"></i> -->
+            <!-- <input type="submit" value="Search"> -->
+          </form>
+        </div>
+
+        <div id="notification">
+          <a href="#"
+            ><img
+              src="https://ps.w.org/wp-notification-bell/assets/icon-256x256.png?rev=2439614"
+          /></a>
+        </div>
+
+        <div id="profile">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png"
+            alt="Akshay Vinayak"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <div id="body-main">
+      <main>
+        <div>
+          <!-- HOME CAROUSEL START-->
+          <section id="home-carousel">
+            <div class="home-page">
+              <div>
+                <a href="singleplaylist_oneD.html"
+                  ><img
+                    src="https://static.billboard.com/files/media/One-Direction-Portrait-Session-In-Sydney-2012-a-billboard-1548-compressed.jpg"
+                /></a>
+              </div>
+              <div>
+                <a href="singleplaylist_coldplay.html"
+                  ><img
+                    src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2013/04/08222_152458_coldplay-2.jpg"
+                /></a>
+              </div>
+              <div>
+                <a href="singleplaylist_bts.html"
+                  ><img
+                    src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2021/07/bts-1627043366.jpg"
+                /></a>
+              </div>
+            </div>
+          </section>
+          <!-- HOME CAROUSEL END -->
+
+          <!-- LATEST RELEASE START-->
+          <section id="latest-release">
+            <!-- NAME -->
+            <p class="music-title">Latest-Release</p>
+            <div class="latest-picks">
+              <!-- LATEST RELEASE 01 -->
+              <div class="latest-picks-body">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="https://i1.sndcdn.com/artworks-JHbrt6tLIAcwh62u-IJDU4w-t500x500.jpg"
+                  /></a>
+                </div>
+                <div id="latest-song">
+                  <p>Hold On<br />Justin Bieber</p>
+                </div>
+                <div id="menu-bar">
+                  <div
+                    style="font-family: cursive; font-size: 0.8rem;"
+                    class="dropdown-queue"
+                  >
+                    <button
+                      class="dropdown-btn"
+                      style="
+                        opacity: 0.9;
+                        font-size: 0.8rem;
+                        background-color: #260c49;
+                      "
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    4:44
+                    <div class="dropdown-content">
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="far fa-heart"></i
+                        >Favourites</a
+                      >
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="fas fa-plus"></i
+                        >Queue</a
+                      >
+                      <!-- <a href="#"><i style="margin-right: 5px;"class="fas fa-play"></i>Play</a> -->
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="fas fa-pause"></i
+                        >Pause</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- LATEST RELEASE 01 -->
+
+              <!-- LATEST RELEASE 02 -->
+              <div class="latest-picks-body">
+                <div>
+                  <a href="#"
+                    ><img
+                      src="https://a10.gaanacdn.com/images/albums/49/3588849/crop_480x480_1607405239_3588849.jpg"
+                  /></a>
+                </div>
+                <div id="latest-song">
+                  <p>Nayan<br />Jubin Nautiyal</p>
+                </div>
+                <div id="menu-bar">
+                  <div
+                    style="font-family: cursive; font-size: 0.8rem;"
+                    class="dropdown-queue"
+                  >
+                    <button
+                      class="dropdown-btn"
+                      style="opacity: 0.9; font-size: 0.8rem;"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    1:22
+                    <div
+                      style="font-family: cursive; font-size: 0.8rem;"
+                      class="dropdown-content"
+                    >
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="far fa-heart"></i
+                        >Favourites</a
+                      >
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="fas fa-plus"></i
+                        >Queue</a
+                      >
+                      <!-- <a href="#"><i style="margin-right: 5px;"class="fas fa-play"></i>Play</a> -->
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="fas fa-pause"></i
+                        >Pause</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- LATEST RELEASE 02 -->
+
+              <!-- LATEST RELEASE 03 -->
+              <div class="latest-picks-body">
+                <a href="#"
+                  ><img
+                    src="http://a10.gaanacdn.com/images/albums/30/3966230/crop_480x480_3966230.jpg"
+                /></a>
+                <div id="latest-song">
+                  <p>Tera Suit <br />Tony Kakkar</p>
+                </div>
+                <div id="menu-bar">
+                  <div
+                    style="font-family: cursive; font-size: 0.8rem;"
+                    class="dropdown-queue"
+                  >
+                    <button
+                      class="dropdown-btn"
+                      style="
+                        opacity: 0.9;
+                        font-size: 0.8rem;
+                        background-color: #260c49;
+                      "
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    3:40
+                    <div class="dropdown-content">
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="far fa-heart"></i
+                        >Favourites</a
+                      >
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="fas fa-plus"></i
+                        >Queue</a
+                      >
+                      <!-- <a href="#"><i style="margin-right: 5px;"class="fas fa-play"></i>Play</a> -->
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="fas fa-pause"></i
+                        >Pause</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- LATEST RELEASE 03 -->
+
+              <!-- LATEST RELEASE 04 -->
+              <div class="latest-picks-body">
+                <a href="#"
+                  ><img
+                    src="https://a10.gaanacdn.com/gn_img/albums/0wrb4qNKLg/wrb4E6pNKL/size_xxl.jpg"
+                /></a>
+                <div id="latest-song">
+                  <p>Memories<br />Maroon 5</p>
+                </div>
+                <div id="menu-bar">
+                  <div
+                    style="font-family: cursive; font-size: 0.8rem;"
+                    class="dropdown-queue"
+                  >
+                    <button
+                      class="dropdown-btn"
+                      style="opacity: 0.9; font-size: 0.8rem;"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    2:10
+                    <div class="dropdown-content">
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="far fa-heart"></i
+                        >Favourites</a
+                      >
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="fas fa-plus"></i
+                        >Queue</a
+                      >
+                      <!-- <a href="#"><i style="margin-right: 5px;"class="fas fa-play"></i>Play</a> -->
+                      <a href="#"
+                        ><i style="margin-right: 5px;" class="fas fa-pause"></i
+                        >Pause</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- LATEST RELEASE 04 -->
+            </div>
+          </section>
+          <!-- LATEST RELEASE END-->
+
+          <!-- POPULAR ARTIST START-->
+          <section id="popular-artist">
+            <!-- NAME -->
+            <p class="music-title">Popular-Artists</p>
+
+            <!-- ARTIST NAMES-->
+            <div class="artists">
+              <!-- ARTIST 01 -->
+              <div class="artist-name">
+                <a href="#"
+                  ><img
+                    src="https://i.scdn.co/image/ab6761610000e5eb12a2ef08d00dd7451a6dbed6"
+                /></a>
+                <span>Ed Sheeran</span>
+              </div>
+              <!-- ARTIST 01 -->
+
+              <!-- ARTIST 02 -->
+              <div class="artist-name">
+                <a href="#"
+                  ><img
+                    src="https://i.iheart.com/v3/catalog/artist/337578?ops=fit(720%2C720)"
+                /></a>
+                <span>Bruno Mars</span>
+              </div>
+              <!-- ARTIST 02 -->
+
+              <!-- ARTIST 03 -->
+              <div class="artist-name">
+                <a href="#"
+                  ><img
+                    src="https://i1.sndcdn.com/avatars-000754019632-3ewkg8-t500x500.jpg"
+                /></a>
+                <span>Shakira</span>
+              </div>
+              <!-- ARTIST 03 -->
+
+              <!-- ARTIST 04 -->
+              <div class="artist-name">
+                <a href="#"
+                  ><img
+                    src="https://static.wikia.nocookie.net/louistomlinson/images/7/76/1D_-_photoshoot.jpg/revision/latest?cb=20200705225357"
+                /></a>
+                <span>One Direction</span>
+              </div>
+              <!-- ARTIST 04 -->
+
+              <!-- ARTIST 05 -->
+              <div class="artist-name">
+                <a href="#"
+                  ><img
+                    src="https://www.independent.ie/style/celebrity/3a3aa/40718414.ece/AUTOCROP/h530/9_1._The_Selena_Gom"
+                /></a>
+                <span>Selena Gomez</span>
+              </div>
+              <!-- ARTIST 05 -->
+
+              <!-- ARTIST 06 -->
+              <div class="artist-name">
+                <a href="#"
+                  ><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg"
+                /></a>
+                <span>Zayn</span>
+              </div>
+              <!-- ARTIST 06 -->
+            </div>
+            <!-- ARTIST NAMES END -->
+
+            <!-- STATIONS START-->
+            <div class="stations">
+              <div id="outer-div">
+                <div id="inner-div">
+                  <div id="innermost-div">
+                    <p>Stations</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STATION 01 -->
+              <div class="stations-name">
+                <a href="#"
+                  ><img
+                    src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJ1ZSUyMGxvdmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+                /></a>
+                <div class="sname">
+                  <p style="font-family: cursive;">Love</p>
+                </div>
+              </div>
+              <!-- STATION 01 -->
+
+              <!-- STATION 02 -->
+              <div class="stations-name">
+                <a href="#"
+                  ><img
+                    src="https://www.namesnack.com/images/namesnack-retro-business-names-5377x3585-20200918.jpeg?crop=1:1,smart&width=1200&dpr=2"
+                /></a>
+                <div class="sname">
+                  <p style="font-family: cursive;">Retro</p>
+                </div>
+              </div>
+              <!-- STATION 02 -->
+
+              <!-- STATION 03 -->
+              <div class="stations-name">
+                <a href="#"
+                  ><img
+                    src="https://static01.nyt.com/images/2018/12/30/arts/30yearend-pop2/merlin_147857643_8e0c5c65-4549-4946-b51d-49425b9dcf24-superJumbo.jpg"
+                /></a>
+                <div class="sname">
+                  <p style="font-family: cursive;">Pop</p>
+                </div>
+              </div>
+              <!-- STATION 03 -->
+
+              <!-- STATION 04 -->
+              <div class="stations-name">
+                <a href="#"
+                  ><img
+                    src="https://i.pinimg.com/474x/20/99/09/2099097c86f03cf02abdf16761c504f4.jpg"
+                /></a>
+                <div class="sname">
+                  <p style="font-family: cursive;">Jazz</p>
+                </div>
+              </div>
+              <!-- STATION 04 -->
+
+              <!-- STATION 05 -->
+              <div class="stations-name">
+                <a href="#"
+                  ><img
+                    src="https://www.magneticmag.com/.image/t_share/MTMzMDU4MzUzOTIzNTI5MTgy/best-tropical-house--chill-music-week-39.jpg"
+                /></a>
+                <div class="sname">
+                  <p style="font-family: cursive;">Chill</p>
+                </div>
+              </div>
+              <!-- STATION 05 -->
+
+              <!-- STATION 06 -->
+              <div class="stations-name">
+                <a href="#"
+                  ><img
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/09/rock-music-wallpapers.jpg"
+                /></a>
+                <div class="sname">
+                  <p style="font-family: cursive;">Rock</p>
+                </div>
+              </div>
+              <!-- STATION 06 -->
+            </div>
+            <!-- STATIONS END-->
+
+            <!-- GENRES -->
+            <div class="genres">
+              <!-- GENRES 01 -->
+              <div class="genre">
+                <a href="#"
+                  ><img
+                    src="https://t4.ftcdn.net/jpg/01/20/28/25/360_F_120282530_gMCruc8XX2mwf5YtODLV2O1TGHzu4CAb.jpg"
+                /></a>
+                <div class="gname">
+                  <p style="font-family: cursive;">Party</p>
+                </div>
+              </div>
+              <!-- GENRES 01 -->
+
+              <!-- GENRES 02 -->
+              <div class="genre">
+                <a href="#"
+                  ><img
+                    src="https://www.myluxoria.com/storage/app/uploads/public/5d1/ea9/dd4/5d1ea9dd4ea9c720203627.jpg"
+                /></a>
+                <div class="gname">
+                  <p style="font-family: cursive;">Electronic</p>
+                </div>
+              </div>
+              <!-- GENRES 02 -->
+
+              <!-- GENRES 03 -->
+              <div class="genre">
+                <a href="#"
+                  ><img
+                    src="https://busites-www.s3.amazonaws.com/blog-margaritaville/2016/07/shutterstock_305567459-694x533.jpg"
+                /></a>
+                <div class="gname">
+                  <p style="font-family: cursive;">Roadtrip</p>
+                </div>
+              </div>
+              <!-- GENRES 03-->
+            </div>
+            <!-- GENRES END-->
+          </section>
+          <!-- POPULAR ARTIST END-->
+
+          <!-- LATEST ENGLISH START-->
+          <section id="latest-english">
+            <!-- NAME -->
+            <p class="music-title">Latest-English</p>
+            <div class="english-picks">
+              <!-- SONG 01 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96"
+                /></a>
+                <span class="song-name">Perfect</span>
+                <span class="singer-name">Ed Sheeran</span>
+              </div>
+              <!-- SONG 01 -->
+
+              <!-- SONG 02 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://a10.gaanacdn.com/gn_img/albums/D0PKLqr3Gl/0PKLv6vJWG/size_xxl.webp"
+                /></a>
+                <span class="song-name">Thousand Years</span>
+                <span class="singer-name">Christian Perri</span>
+              </div>
+              <!-- SONG 02 -->
+
+              <!-- SONG 03 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://i.scdn.co/image/ab67616d0000b2737d1ef281d02ff2487f233292"
+                /></a>
+                <span class="song-name">Forever</span>
+                <span class="singer-name">Lewis Capaldi</span>
+              </div>
+              <!-- SONG 03 -->
+
+              <!-- SONG 04 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://images.genius.com/b0d30d8c4016af15f443b241f34be702.600x600x1.jpg"
+                /></a>
+                <span class="song-name">Steal My Girl</span>
+                <span class="singer-name">One Direction</span>
+              </div>
+              <!-- SONG 04 -->
+
+              <!-- SONG 05 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://cdns-images.dzcdn.net/images/cover/5b59dc18e109515420f8237719bd2186/500x500.jpg"
+                /></a>
+                <span class="song-name">Count On Me</span>
+                <span class="singer-name">Bruno Mars</span>
+              </div>
+              <!-- SONG 05 -->
+
+              <!-- SONG 06 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/srch_hungama_2221087.jpg"
+                /></a>
+                <span class="song-name">Right Na Na Na</span>
+                <span class="singer-name">Akon</span>
+              </div>
+              <!-- SONG 06 -->
+            </div>
+          </section>
+          <!-- LATEST ENGLISH END-->
+
+          <!-- LATEST HINDI START-->
+          <section id="latest-hindi">
+            <!-- NAME -->
+            <p class="music-title">Latest-Hindi</p>
+            <div class="hindi-picks">
+              <!-- SONG 01 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://i1.sndcdn.com/artworks-000310163340-x0nh2l-t500x500.jpg"
+                /></a>
+                <span class="song-name">Balam Pichkari</span>
+                <span class="singer-name">Pritam</span>
+              </div>
+              <!-- SONG 01 -->
+
+              <!-- SONG 02 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://images.genius.com/50af4dfcb3a4295c34bfacd6c1fffe9f.1000x1000x1.jpg"
+                /></a>
+                <span class="song-name">Alag Aasmaan</span>
+                <span class="singer-name">Anuv Jain</span>
+              </div>
+              <!-- SONG 02 -->
+
+              <!-- SONG 03 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://c.saavncdn.com/020/Liggi-Hindi-2019-20200727120633-500x500.jpg"
+                /></a>
+                <span class="song-name">Liggi</span>
+                <span class="singer-name">Ritviz</span>
+              </div>
+              <!-- SONG 03 -->
+
+              <!-- SONG 04 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://c.saavncdn.com/091/Safar-Hindi-2018-20180611-500x500.jpg"
+                /></a>
+                <span class="song-name">Safar</span>
+                <span class="singer-name">Bhuvan Bam</span>
+              </div>
+              <!-- SONG 04 -->
+
+              <!-- SONG 05 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://a10.gaanacdn.com/gn_img/albums/Bp1bAynb02/p1bAQdjb02/size_xxl.webp"
+                /></a>
+                <span class="song-name">Chaudhary</span>
+                <span class="singer-name">Coke Studio</span>
+              </div>
+              <!-- SONG 05 -->
+
+              <!-- SONG 06 -->
+              <div>
+                <a href="#"
+                  ><img
+                    src="https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/3623888/original/crop:x0y0w3200h3200/hash:1467472613/1399371970_Sanam_Profile_logo_1.jpg?1467472613"
+                /></a>
+                <span class="song-name">Lag Ja Gale</span>
+                <span class="singer-name">Sanam</span>
+              </div>
+              <!-- SONG 06 -->
+            </div>
+          </section>
+          <!-- LATEST HINDI END-->
+        </div>
+      </main>
+      <!-- MAIN END-->
+
+      <!-- ASIDE START-->
+      <aside>
+        <div id="queue-header">
+          <div>Queue</div>
+          <div class="dropdown-queue">
+            <div style="color: green;">Queue</div>
+            <div id="000" class="dropdown-content">
+              <a href="#"
+                ><i style="margin-right: 5px;" class="far fa-heart"></i
+                >Favourites</a
+              >
+              <a href="#"
+                ><i style="margin-right: 5px;" class="fas fa-plus"></i
+                >Playlists</a
+              >
+              <!-- <a href="#"><i style="margin-right: 5px;"class="fas fa-play"></i>Play</a>
+                    <a href="#"><i style="margin-right: 5px;"class="fas fa-pause"></i>Pause</a> -->
+            </div>
+          </div>
+        </div>
+        <div id="queue-list">
+          <div class="song">
+            <span style="font-size: 0.6rem;">01</span>
+            <div class="song-img">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/3/3d/Dua_Lipa_Levitating_%28DaBaby_Remix%29.png"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="song-info">
+              <span>Levitating</span>
+              <br />
+              <span style="opacity: 0.9; font-size: 0.6rem;">Dua Lipa</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="song">
+            <span style="font-size: 0.6rem;">02</span>
+            <div class="song-img">
+              <img
+                src="https://a10.gaanacdn.com/gn_img/albums/0wrb4qNKLg/wrb4E6pNKL/size_xxl.jpg"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="song-info">
+              <span>Memories</span>
+              <br />
+              <span style="opacity: 0.9; font-size: 0.6rem;">Maroon 5</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="song">
+            <span style="font-size: 0.6rem;">03</span>
+            <div class="song-img">
+              <img
+                src="https://c.saavncdn.com/020/Liggi-Hindi-2019-20200727120633-500x500.jpg"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="song-info">
+              <span>Liggi</span>
+              <br />
+              <span style="opacity: 0.9; font-size: 0.6rem;">Ritviz</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="song">
+            <span style="font-size: 0.6rem;">04</span>
+            <div class="song-img">
+              <img
+                src="https://images.genius.com/b0d30d8c4016af15f443b241f34be702.600x600x1.jpg"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="song-info">
+              <span>What Makes You Beautiful</span>
+              <br />
+              <span style="opacity: 0.9; font-size: 0.6rem;"
+                >One Direction</span
+              >
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="song">
+            <span style="font-size: 0.6rem;">05</span>
+            <div class="song-img">
+              <img
+                src="https://pagalfree.com/images/128Kadam%20-%20Karwaan%20128%20Kbps.jpg"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="song-info">
+              <span>Kadam</span>
+              <br />
+              <span style="opacity: 0.9; font-size: 0.6rem;"
+                >Prateek Kuhad</span
+              >
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="song">
+            <span style="font-size: 0.6rem;">06</span>
+            <div class="song-img">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b2737d1ef281d02ff2487f233292"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="song-info">
+              <span>Bruises</span>
+              <br />
+              <span style="opacity: 0.9; font-size: 0.6rem;"
+                >Lewis Capaldi</span
+              >
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="song">
+            <span style="font-size: 0.6rem;">07</span>
+            <div class="song-img">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="song-info">
+              <span>Perfect</span>
+              <br />
+              <span style="opacity: 0.9; font-size: 0.6rem;">Ed Sheeran</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="song">
+            <span style="font-size: 0.6rem;">08</span>
+
+            <div class="song-img">
+              <img
+                src="https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/3623888/original/crop:x0y0w3200h3200/hash:1467472613/1399371970_Sanam_Profile_logo_1.jpg?1467472613"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="song-info">
+              <span>Lag Ja Gale</span>
+              <br />
+              <span style="opacity: 0.9; font-size: 0.6rem;">Sanam</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="song">
+            <span style="font-size: 0.6rem;">09</span>
+            <div class="song-img">
+              <img
+                src="https://c.saavncdn.com/091/Safar-Hindi-2018-20180611-500x500.jpg"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="song-info">
+              <span>Safar</span>
+              <br />
+              <span style="opacity: 0.9; font-size: 0.6rem;">Bhuvan Bam</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- ASIDE END-->
+    </div>
+
+    <!-- FOOTER SECTION START-->
+    <footer class="footer">
+      <div class="footer-song">
+        <img
+          src="https://c.saavncdn.com/020/Liggi-Hindi-2019-20200727120633-500x500.jpg"
+        />
+        <div class="recent-song-info">
+          <span
+            style="font-family: cursive; font-size: 0.8rem; margin-left: 10px;"
+            >Liggi</span
+          >
+          <span
+            style="
+              font-family: cursive;
+              font-size: 0.7rem;
+              color: grey;
+              margin-left: 10px;
+            "
+            >Ritviz</span
+          >
+        </div>
+        <div class="love-icon">
+          <i style="opacity: 0.8; margin: 10px;" class="far fa-heart"></i>
+        </div>
+        <div class="stop-icon">
+          <i style="opacity: 0.8; margin: 10px;" class="fas fa-ban"></i>
+        </div>
+      </div>
+
+      <div class="soundtrack">
+        <div class="play">
+          <i style="opacity: 0.5;" class="fas fa-random"></i>
+          <i style="opacity: 0.8;" class="fas fa-backward"></i>
+          <i
+            style="font-size: 2.5rem; font-weight: 200;"
+            class="far fa-pause-circle"
+          ></i>
+          <i style="opacity: 0.8;" class="fas fa-forward"></i>
+          <i style="opacity: 0.5;" class="fas fa-redo"></i>
+        </div>
+
+        <div class="track">
+          <span style="font-family: cursive; font-size: 0.8rem;">0:01</span>
+          <div class="full-song">
+            <div class="progress"></div>
+            <div class="circle"></div>
+          </div>
+          <span style="font-family: cursive; font-size: 0.8rem;"> 3:40</span>
+        </div>
+      </div>
+
+      <div class="settings">
+        <div class="slider-icon">
+          <i style="opacity: 0.8; margin: 10px;" class="fas fa-sliders-h"></i>
+        </div>
+        <div class="audio-icon">
+          <i style="opacity: 0.8; margin: 10px;" class="fas fa-file-audio"></i>
+        </div>
+        <div class="volume-icon">
+          <i style="opacity: 0.8; margin: 10px;" class="fas fa-volume-up"></i>
+          <div class="full-song">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="expand-icon">
+          <i style="opacity: 0.8; margin: 10px;" class="fas fa-expand-alt"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END-->
+  </body>
+  <!-- BODY END-->
+</html>
